@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>John Doe Portfolio</title>
+  <style>
+    /* =========================
+   TYPE SELECTOR
+========================= */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+/* =========================
+   ID SELECTOR
+========================= */
+#main-header {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* =========================
+   DESCENDANT SELECTOR
+========================= */
+#main-header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* =========================
+   PSEUDO-CLASS SELECTOR
+========================= */
+#main-header nav a:hover {
+  color: #00b894;
+}
+
+button:hover {
+  background-color: #019875;
+}
+
+/* =========================
+   CLASS SELECTOR
+========================= */
+.project-card {
+  background: white;
+  margin: 15px 0;
+  padding: 15px;
+  border-left: 4px solid #00b894;
+}
+
+/* =========================
+   ATTRIBUTE SELECTOR
+========================= */
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+input[required] {
+  border: 2px solid #00b894;
+}
+
+/* =========================
+   FORM + BUTTON STYLING
+========================= */
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+button {
+  background: #00b894;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+  </style>
+</head>
+<body>
+
+  <header id="main-header">
+    <h1>John Doe</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a frontend developer passionate about UI design and web accessibility.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>Responsive portfolio built with HTML and CSS.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>To-Do App</h3>
+      <p>Simple to-do list with local storage.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 John Doe</p>
+  </footer>
+
+</body>
+</html>
